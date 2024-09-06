@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 0.4em;
+    margin-top: 0.2em;
+}
+
+time {
+    font-size: 0.7em;
+}
+
+.navbar {
+    background-color: gray;
+    width: 100%;
+    padding: .5em;
+}
+
+nav.navbar a {
+    background-color: darkgray;
+    color: green;
+    padding: .2em;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+nav.navbar a:hover {
+    color: aliceblue;
+    padding: .35em;
+}
+
+a {
+    color: green;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+a:hover {
+    color: aliceblue;
+    padding: 0.1em;
+    
+}
+

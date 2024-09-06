@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>kontaktskjema</title>
+    <link rel="stylesheet" type="text/css" href="stilark.css">
+    <link rel="stylesheet" type="text/css" href="contact_form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+        <a href="index.html">Hovedside</a>
+    </nav>
+    <div class="container">
+        <form action="https://kark.uit.no/internett/php/eksempler/DisplayParameters.php" method="post">
+            <div>
+                <label for="name">Enter your name: </label>
+                <input type="text" name="name" id="name" placeholder="Your name.." required>
+            </div>
+            <div>
+                <label for="email">Enter your email: </label>
+                <input type="email" name="email" id="email" placeholder="Your email.." required>
+            </div>
+            <div>
+                <label for="birthday">Enter your birthday: </label>
+                <input type="date" name="birthday" id="birthday" required>
+            </div>
+            <div>
+                <label for="webadress">Enter your webadress: </label>
+                <input type="url" name="webadress" id="webadress" placeholder="Your webadress.." required>
+            </div>
+            <div>
+                <label for="message">Enter your message: </label>
+                <textarea name="message" id="message" placeholder="Your message.." required></textarea>
+            </div>
+            <div>
+                <label for="class">Enter your class: </label>
+                <select id="class" name="class">
+                    <option value="Matte 2">Matte 2</option>
+                    <option value="Videregående programmering">Videregående programmering</option>
+                    <option value="Databaser og webapplikasjoner">Databaser og webapplikasjoner</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html> 

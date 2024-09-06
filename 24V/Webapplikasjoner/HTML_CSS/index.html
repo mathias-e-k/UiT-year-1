@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stilark.css">
+    <title>Algorithms</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+        <a href="kontaktskjema.html">kontaktskjema</a>
+    </nav>
+    <header>
+        <h1>Algorithms</h1>
+        <time datetime="2024-03-06">2024 March 06</time>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#radixsort">Radix Sort</a></li>
+            <li><a href="#closestpoints">Closest points</a></li>
+            <li><a href="#sorting">Fastest sorting algorithms</a></li>
+        </ol>
+    </nav>
+    <section>
+        <h2 id="radixsort">Radix Sort</h2>
+        <article>
+            <h3>From wikipedia:</h3>
+            <p>
+                In computer science, radix sort is a non-comparative sorting algorithm. 
+                It avoids comparison by creating and distributing elements into buckets 
+                according to their radix. For elements with more than one significant 
+                digit, this bucketing process is repeated for each digit, while preserving 
+                the ordering of the prior step, until all digits have been considered. 
+                For this reason, radix sort has also been called bucket sort and digital sort. 
+            </p>
+            <footer>
+                <p>From: <a href="https://en.wikipedia.org/wiki/Radix_sort">Wikipedia</a></p>
+            </footer>
+        </article>
+    </section>
+    <section>
+        <h2 id="closestpoints">Closest pair of points</h2>
+        <p>
+            Here is my implementation of the closest points algorithm. 
+            A brute force algorithm took several seconds to find the closest of 5000 points.
+            But the more advanced closest points algorithm took less than .1 seconds
+        </p>
+        <img src="closestpoints.PNG" alt="closest points algorithm in vscode" width="512" height="367">
+    </section>
+    <section>
+        <h2 id="sorting">Top 5 fastest sorting algorithms</h2>
+        <p>
+            These are the 5 fastest sorting algorithms. In my test i sorted 
+            10000 random numbers between 0 and 100000. The ranking may be 
+            different for a different number of items.
+        </p>
+        <ol>
+            <li>quickSort: <b>0.064 seconds</b></li>
+            <li>mergeSort: <b>0.116 seconds</b></li>
+            <li>timSort: <b>0.117 seconds</b></li>
+            <li>heapSort: 
+                <ul>
+                    <li>minHeap: <b>0.233 seconds</b></li>
+                    <li>maxHeap: <b>0.259 seconds</b></li>
+                </ul>
+            </li>
+            <li>selectionSort: <b>4.452 seconds</b></li>
+        </ol>
+        <p>All the algorithms i tested:</p>
+        <ul>
+            <li>insertionSort</li>
+            <li>selectionSort</li>
+            <li>bubbleSort</li>
+            <li>mergeSort</li>
+            <li>quickSort</li>
+            <li>timSort</li>
+            <li>heapSort</li>
+        </ul>
+    </section>
+    
+
+</body>
+
+</html> 

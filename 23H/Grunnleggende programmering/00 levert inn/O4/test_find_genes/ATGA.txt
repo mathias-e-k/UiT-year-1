@@ -1,0 +1,18 @@
+Something interesting happens when a genome contains "ATGA"
+
+Consider the following genome: ATGACCTGA
+After splitting it to get its gene it looks like this: ATG ACC TGA
+The gene starts after ATG, and ends before TGA, and it follows all the other rules of genes.
+The problem is that a lot of methods of finding genes wouldn't work on this genome, 
+because "ATGA" contains both "ATG" and "TGA", combined together.
+So a method that would change "TGA" to "***" would also be getting rid of the "ATG" thats in "ATGA"
+
+Here is another example: ATGCGATGACTTAA
+This genome uses "ATGA" as both the ending and start of genes:
+First gene: ATG  CGA  TGACTTAA
+Second gene: ATGCGATG  ACT  TAA
+The "TG" part of "ATGA" is used in both the ending of the first gene and the start of the second gene.
+These are both valid genes that follow all the rules, so i believe they should be counter.
+But the method that replaces gene endings with "***" would turn it into "ATGCGA***CT***". 
+So it would only find the first gene.
+
